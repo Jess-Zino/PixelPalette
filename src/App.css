@@ -1,0 +1,198 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  flex: row;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: #121a24;
+  gap: 10vh;
+}
+
+.Navbar{
+  flex:1;
+  border-right: 3px solid #eeb663 ;
+  background-color: #172434;
+width: fit-content;
+display: flex;
+height:100vh;
+position: fixed;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+max-width: 30vw;
+}
+
+.nav{
+
+ background-color: #172434;
+   color:white;
+    text-align: center;
+    max-width: 30vw;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    font-family: "Poppins";
+}
+.page{
+  display: flex;
+  flex-direction: row;
+  gap: 5vw;
+}
+.mainBody{
+  flex:8;
+  width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  align-items:center;
+  justify-content:start;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  }
+.griddisplay{
+  display: grid;
+  margin: 10px auto;
+grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr) );
+grid-gap: 5vw;
+max-width: 80vw;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  margin:10px auto;
+}
+/* Add these styles to your CSS */
+/* Add these styles to your CSS */
+.tag-list {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items:end; /* Align tags to the bottom of the container */
+height:60vh;
+  width: 100%;/* Adjust the margin between tags and the image */
+}
+
+.tag {
+  background-color: #eeb663 ; /* Tag background color */
+  color: #ffffff; /* Tag text color */
+  padding: 4px 8px; /* Tag padding */
+  border-radius: 4px; /* Tag border radius */
+  font-size: 10px; /* Tag font size */
+  position: relative;
+  bottom: 10px;
+  font-family: "Poppins";
+ /* Position the tags at the bottom of the container */
+}
+.search{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap:1rem;
+  outline :none;
+  width: 80vw;
+}
+ .ant-menu-item + .ant-menu-item-selected{
+  background-color: #121a24;
+ }
+@media (max-width:912px){
+  body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: #172434;
+    gap: 0vh;
+  }
+  
+  .Navbar{
+    border: none;
+    background-color: #172434;
+  width: fit-content;
+  display: flex;
+  height:10vh;
+  padding: 0px;
+  margin: 0 auto 0 -10px;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+ min-width: 100vw;
+  gap: 10vw;
+  }
+  .collapsed{
+
+  }
+  .nav{
+  
+   background-color: #172434;
+     color:white;
+      text-align: center;
+      max-width: 45vw;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      margin: 0;
+      padding: 0px;
+      flex-direction: row;
+      font-family: "Poppins";
+  }
+  .page{
+    display: flex;
+    flex-direction: column;
+    gap: 0vw;
+  }
+  .mainBody{
+    flex:8;
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .griddisplay{
+    display: grid;
+    margin: 10px auto;
+  grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr) );
+  grid-gap: 4vw;
+  max-width: 90vw;
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin:10px auto;
+  }
+
+  .tag-list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Align tags to the bottom of the container */
+    gap: 8px; /* Adjust the gap between tags as needed */
+    margin-top: 8px; 
+    width: 10vw;/* Adjust the margin between tags and the image */
+  }
+  
+  .tag {
+    background-color: #eeb663 ; /* Tag background color */
+    color: #ffffff; /* Tag text color */
+    padding: 4px 8px; /* Tag padding */
+    border-radius: 4px; /* Tag border radius */
+    font-size: 10px; /* Tag font size */
+    position: relative;
+    bottom: 10px;
+   /* Position the tags at the bottom of the container */
+  }
+  
+}
